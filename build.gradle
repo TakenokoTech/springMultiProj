@@ -56,4 +56,25 @@ dependencies {
 	runtime('mysql:mysql-connector-java')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	// testCompile('org.springframework.security:spring-security-test')
+	compile fileTree(dir: 'libs', includes: ['*.jar'])
 }
+
+project(':src-core') {
+  dependencies {
+    // compile project(':src-core')
+  }
+}
+
+project(':src-api') {
+  dependencies {
+    // compile project(':src-core')
+  }
+}
+
+
+project(':src-web') {
+  dependencies {
+    // compile project(':src-core')
+  }
+}
+

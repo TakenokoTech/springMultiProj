@@ -1,0 +1,7 @@
+//bootRepackage {
+//	mainClass = 'tech.takenoko.Api'
+//}
+
+dependencies {
+
+}
