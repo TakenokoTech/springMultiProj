@@ -1,7 +1,3 @@
-//bootRepackage {
-//	mainClass = 'tech.takenoko.Core'
-//}
-
-dependencies {
-
+springBoot {
+	mainClassName = 'tech.takenoko.Core'
 }

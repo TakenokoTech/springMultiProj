@@ -1,7 +1,7 @@
-//bootRepackage {
-//  mainClass = 'tech.takenoko.Web'
-//}
+springBoot {
+	mainClassName = 'tech.takenoko.Web'
+}
 
 dependencies {
-
+	compile project(':src-core')
 }
