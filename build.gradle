@@ -63,7 +63,6 @@ subprojects {
 		mavenCentral()
 	}
 	dependencies {
-		compile("org.springframework.boot:spring-boot-starter-jdbc")
 		compile("org.springframework.boot:spring-boot-starter-thymeleaf")
 		compile("org.springframework.boot:spring-boot-starter-web")
 		compile("com.fasterxml.jackson.module:jackson-module-kotlin")
@@ -71,8 +70,6 @@ subprojects {
 		compile("org.jetbrains.kotlin:kotlin-reflect")
 		compile("org.springframework.boot:spring-boot-devtools")
 		runtime("org.springframework.boot:spring-boot-devtools")
-		compile("mysql:mysql-connector-java")
-		runtime("mysql:mysql-connector-java")
 		testCompile("org.springframework.boot:spring-boot-starter-test")
 		// compile("org.springframework.boot:spring-boot-starter-security")
 		// testCompile('org.springframework.security:spring-security-test')

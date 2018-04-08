@@ -1,6 +1,6 @@
 package tech.takenoko.dao
 
-class Sample {
+class SampleDao {
 
 
 }
