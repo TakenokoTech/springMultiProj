@@ -13,9 +13,9 @@ import tech.takenoko.dao.UserDao
 
 @Controller
 @RequestMapping("sample")
-class sample1Controller {
+class sample1Controller : BaseController() {
 
-	val logger: Logger = LoggerFactory.getLogger(this::class.java);
+	override val logger: Logger = LoggerFactory.getLogger(this::class.java);
 
 	@Autowired
 	lateinit var userDao: UserDao
@@ -29,7 +29,7 @@ class sample1Controller {
 
 		userDao.create("xxxxxxx", "XXXXXXX");
 		userDao.findAll();
-		val count: Long = userDao.count();
+		val count: Long = userDao.count()?:0;
         model.addAttribute("name", count)
         return "sample"
     }

@@ -5,3 +5,10 @@ springBoot {
 dependencies {
 	compile project(':src-core')
 }
+
+compileKotlin {
+    copy{
+    	from '../src-core/build'
+        into './build'
+	}
+}

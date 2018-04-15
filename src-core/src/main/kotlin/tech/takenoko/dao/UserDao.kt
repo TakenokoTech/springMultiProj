@@ -41,7 +41,7 @@ class UserDao () : BaseDao() {
 		return null;
 	}
 
-	fun count(): Long {
+	fun count(): Long? {
 		return template.queryForObject(COUNT_SQL, Long::class.java);
 	}
 
